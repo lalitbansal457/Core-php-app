@@ -14,10 +14,11 @@
 
 
 	$uname = $_SESSION['username'];
-
+	echo $_SESSION['username'];
 	$sql = "SELECT * from register where username = '$uname'";
 	$result = mysql_query($sql);
 	$row = mysql_fetch_array($result);
+	//print_r($row['username']) ;
 
 
 ?>
@@ -46,9 +47,9 @@
 		        @include 'include/left_bar.php' ;
 		    ?>
 		    <div class="content">
-		    	<span> Welcome <?php echo $row[username] ?>. </span>
-		    	<span>Your password is  <?php echo $row[password] ?> </span>
-
+		    	<b style="font-size: 30px;margin-bottom:30px;display:block;text-align:center">Welcome</b>
+		    	<p> <b style="font-weight:bold">Username:</b> <?php echo $row['username'] ?>. </p>
+		    	<p><b style="font-weight:bold">Password:</b>  <?php echo $row['password'] ?> </p>
 		    	<p>
 		    		<a href="logout.php">
 		    			Logout

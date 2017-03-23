@@ -1,6 +1,7 @@
 <?php
-
-	if (isset($_SESSION[username])) {
+	session_start();
+	if (isset($_SESSION['username'])) {
+		echo 'me';
 		header("location: welcome.php");		
 	}	
 
@@ -100,12 +101,7 @@
 		$cpass = $_POST['cpass'];
 		$gender = $_POST['gender'];
 		$description = $_POST['description'];
-		// $f1 = $_FILES['image']['name'];
-		// $f2 = $_FILES['image']['temp_name'];
-		// $fol = "upload/".$f1;
-		// move_uploaded_file($f2, $fol);
-
-
+		
 		$fileName = $_FILES["image"]["name"]; 
 		$fileTmpLoc = $_FILES["image"]["tmp_name"];
 		// Path and file name

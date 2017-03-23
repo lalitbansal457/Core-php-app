@@ -37,7 +37,7 @@
 					</div>
 			  <div class="copy-right">
 				<div class="wrap">
-				 <p>Design by  <a href="http://w3layouts.com">W3Layouts</a></p>
+				 <p>Design by  <a href="#">Lalit Bansal</a></p>
 			      <div class="clear"></div>
 			</div>	
 		</div>

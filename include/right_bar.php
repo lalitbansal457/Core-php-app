@@ -38,7 +38,7 @@
 			  </div>
         	  <span><a href="#">Forgot Password ?</a></span>
           </form>
-    	  	   <h4>Free registration <a href="#">Click here</a></h4>
+    	  	   <h4>Free registration <a href="register.php">Click here</a></h4>
     	</div>
      </div>
 </div>
